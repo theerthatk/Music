@@ -131,7 +131,7 @@ a {
     border-radius: 50%;
     object-fit: cover; /* Ensures the image fits within the circle */
     border: 2px solid #343a40; /* Dark border around profile image */
-    margin-left: 10px; /* Space between the last button and profile icon */
+    /* margin-left: 10px; */
 }
 
 
@@ -198,6 +198,10 @@ h6 {
     .sidebar {
         display: none;
 
+    }
+    .no-bg{
+        display: flex;
+        align-items: center;
     }
     .icon-circle{
         display: none;
