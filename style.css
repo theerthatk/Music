@@ -457,3 +457,61 @@ h6 {
 .footer-country {
     color: #b3b3b3;
 }
+
+
+.rectangle-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows the rectangles to wrap to the next line */
+}
+
+.rectangle-box {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    height: 75px; /* Change to 50px if needed */
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    flex: 1;
+    margin-bottom: 10px; /* Space between rows when wrapping */
+    margin-top: 20px;
+}
+
+.rectangle-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.details {
+    color: white;
+}
+
+.details h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.details p {
+    font-size: 12px;
+    margin: 5px 0 0;
+    color: #b3b3b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rectangle-box {
+        flex: 0 0 48%; /* 2 rectangles in a row, taking 48% of the width each */
+    }
+}
+
+@media (max-width: 480px) {
+    .rectangle-box {
+        flex: 0 0 100%; /* 1 rectangle in a row on very small screens */
+    }
+}
